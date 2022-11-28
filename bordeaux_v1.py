@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov 28 22:45:24 2022
-
-@author: victor
-"""
 import streamlit as st
 import mysql.connector
 import pandas as pd 
@@ -45,3 +39,8 @@ rows = run_query("SELECT * from mytable;")
 # Print results.
 for row in rows:
     st.write(f"{row[0]} has a :{row[1]}:")
+
+
+st.title('Hello Wilders, welcome to my application!')
+st.write('coucou coucou')    
+    
