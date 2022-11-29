@@ -9,13 +9,14 @@ import seaborn as sns
 import folium
 from folium  import plugins
 from folium import features
+import pyarrow.lib as _lib
 # from folium.plugins import MarkerCluster
 # from folium.plugins import HeatMap
 
 import plotly.express as px 
 
-import pymysql
-from sqlalchemy import create_engine
+#import pymysql
+#from sqlalchemy import create_engine
 
 
 # Initialize connection.
@@ -34,6 +35,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
+
 rows = run_query("SELECT * from mytable;")
 
 # Print results.
@@ -41,6 +43,15 @@ for row in rows:
     st.write(f"{row[0]} has a :{row[1]}:")
 
 
-st.title('Hello Wilders, welcome to my application!')
-st.write('coucou coucou')    
+st.title('Welcome to MappySmileBord-eau application!')
+st.write('Victor')    
     
+
+
+
+
+
+
+
+
+
